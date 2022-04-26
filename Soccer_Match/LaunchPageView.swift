@@ -17,14 +17,14 @@ struct LaunchPageView: View {
             //.aspectRatio(contentMode: .fill)
                 .frame(width: 300, height: 300)
                 .clipShape(Circle())
-                .shadow(color: .gray, radius: 10, x: 30, y: 10)
+                .shadow(color: .gray, radius: 10, x: 10, y: 10)
                 .overlay(
                     Circle().stroke(Color.black,
                                     lineWidth: 10))
             Spacer()
-            Text("축구 매칭")
+            Text("모여모여 풋살")
                 .font(.custom("BM JUA_OTF", size: 50))
-                .shadow(color: .gray, radius: 10, x: 30, y: 1)
+                .shadow(color: .gray, radius: 10, x: 5, y: 5)
             Spacer()
             
             //.clipped()

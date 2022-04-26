@@ -17,6 +17,10 @@
 		32A01A532817D8A90041389C /* LaunchPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A01A522817D8A90041389C /* LaunchPageView.swift */; };
 		32A01A612817E7820041389C /* BM JUA_OTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32A01A602817E7820041389C /* BM JUA_OTF.otf */; };
 		32A01A622817E7980041389C /* Soccer-Match-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32A01A592817E5F40041389C /* Soccer-Match-Info.plist */; };
+		32AC128628180C29001F1A0A /* LoginPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AC128528180C29001F1A0A /* LoginPageView.swift */; };
+		32AD772D28181C4D0031D97D /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD772C28181C4D0031D97D /* MainPageView.swift */; };
+		32AD772F281827930031D97D /* GmarketSansTTFMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32AD772E281827930031D97D /* GmarketSansTTFMedium.ttf */; };
+		32AD773128182E2D0031D97D /* MainButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD773028182E2D0031D97D /* MainButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		32A01A522817D8A90041389C /* LaunchPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPageView.swift; sourceTree = "<group>"; };
 		32A01A592817E5F40041389C /* Soccer-Match-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Soccer-Match-Info.plist"; sourceTree = SOURCE_ROOT; };
 		32A01A602817E7820041389C /* BM JUA_OTF.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BM JUA_OTF.otf"; sourceTree = "<group>"; };
+		32AC128528180C29001F1A0A /* LoginPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageView.swift; sourceTree = "<group>"; };
+		32AD772C28181C4D0031D97D /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		32AD772E281827930031D97D /* GmarketSansTTFMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFMedium.ttf; sourceTree = "<group>"; };
+		32AD773028182E2D0031D97D /* MainButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,8 @@
 		32A01A262817D7760041389C /* Soccer_Match */ = {
 			isa = PBXGroup;
 			children = (
+				32AD772B28181C2E0031D97D /* MainPage */,
+				32AC128428180C05001F1A0A /* LoginPage */,
 				32A01A592817E5F40041389C /* Soccer-Match-Info.plist */,
 				32A01A542817E3570041389C /* Font */,
 				32A01A272817D7760041389C /* Soccer_MatchApp.swift */,
@@ -107,6 +117,7 @@
 				32A01A292817D7760041389C /* ContentView.swift */,
 				32A01A2B2817D7760041389C /* Assets.xcassets */,
 				32A01A2D2817D7760041389C /* Preview Content */,
+				32AD773028182E2D0031D97D /* MainButtonStyle.swift */,
 			);
 			path = Soccer_Match;
 			sourceTree = "<group>";
@@ -139,9 +150,26 @@
 		32A01A542817E3570041389C /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				32AD772E281827930031D97D /* GmarketSansTTFMedium.ttf */,
 				32A01A602817E7820041389C /* BM JUA_OTF.otf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		32AC128428180C05001F1A0A /* LoginPage */ = {
+			isa = PBXGroup;
+			children = (
+				32AC128528180C29001F1A0A /* LoginPageView.swift */,
+			);
+			path = LoginPage;
+			sourceTree = "<group>";
+		};
+		32AD772B28181C2E0031D97D /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				32AD772C28181C4D0031D97D /* MainPageView.swift */,
+			);
+			path = MainPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +280,7 @@
 				32A01A2C2817D7760041389C /* Assets.xcassets in Resources */,
 				32A01A612817E7820041389C /* BM JUA_OTF.otf in Resources */,
 				32A01A622817E7980041389C /* Soccer-Match-Info.plist in Resources */,
+				32AD772F281827930031D97D /* GmarketSansTTFMedium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +307,10 @@
 			files = (
 				32A01A2A2817D7760041389C /* ContentView.swift in Sources */,
 				32A01A532817D8A90041389C /* LaunchPageView.swift in Sources */,
+				32AD773128182E2D0031D97D /* MainButtonStyle.swift in Sources */,
+				32AD772D28181C4D0031D97D /* MainPageView.swift in Sources */,
 				32A01A282817D7760041389C /* Soccer_MatchApp.swift in Sources */,
+				32AC128628180C29001F1A0A /* LoginPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +469,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Soccer_Match/Preview Content\"";
+				DEVELOPMENT_TEAM = FRZRS5Y9L6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Soccer-Match-Info.plist";
@@ -466,6 +499,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Soccer_Match/Preview Content\"";
+				DEVELOPMENT_TEAM = FRZRS5Y9L6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Soccer-Match-Info.plist";

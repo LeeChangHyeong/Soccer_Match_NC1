@@ -14,6 +14,9 @@
 		32A01A392817D7770041389C /* Soccer_MatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A01A382817D7770041389C /* Soccer_MatchTests.swift */; };
 		32A01A432817D7770041389C /* Soccer_MatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A01A422817D7770041389C /* Soccer_MatchUITests.swift */; };
 		32A01A452817D7770041389C /* Soccer_MatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A01A442817D7770041389C /* Soccer_MatchUITestsLaunchTests.swift */; };
+		32A01A532817D8A90041389C /* LaunchPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A01A522817D8A90041389C /* LaunchPageView.swift */; };
+		32A01A612817E7820041389C /* BM JUA_OTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32A01A602817E7820041389C /* BM JUA_OTF.otf */; };
+		32A01A622817E7980041389C /* Soccer-Match-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32A01A592817E5F40041389C /* Soccer-Match-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		32A01A3E2817D7770041389C /* Soccer_MatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Soccer_MatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A01A422817D7770041389C /* Soccer_MatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soccer_MatchUITests.swift; sourceTree = "<group>"; };
 		32A01A442817D7770041389C /* Soccer_MatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soccer_MatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		32A01A522817D8A90041389C /* LaunchPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPageView.swift; sourceTree = "<group>"; };
+		32A01A592817E5F40041389C /* Soccer-Match-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Soccer-Match-Info.plist"; sourceTree = SOURCE_ROOT; };
+		32A01A602817E7820041389C /* BM JUA_OTF.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BM JUA_OTF.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +100,10 @@
 		32A01A262817D7760041389C /* Soccer_Match */ = {
 			isa = PBXGroup;
 			children = (
+				32A01A592817E5F40041389C /* Soccer-Match-Info.plist */,
+				32A01A542817E3570041389C /* Font */,
 				32A01A272817D7760041389C /* Soccer_MatchApp.swift */,
+				32A01A522817D8A90041389C /* LaunchPageView.swift */,
 				32A01A292817D7760041389C /* ContentView.swift */,
 				32A01A2B2817D7760041389C /* Assets.xcassets */,
 				32A01A2D2817D7760041389C /* Preview Content */,
@@ -125,6 +134,14 @@
 				32A01A442817D7770041389C /* Soccer_MatchUITestsLaunchTests.swift */,
 			);
 			path = Soccer_MatchUITests;
+			sourceTree = "<group>";
+		};
+		32A01A542817E3570041389C /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				32A01A602817E7820041389C /* BM JUA_OTF.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +250,8 @@
 			files = (
 				32A01A2F2817D7760041389C /* Preview Assets.xcassets in Resources */,
 				32A01A2C2817D7760041389C /* Assets.xcassets in Resources */,
+				32A01A612817E7820041389C /* BM JUA_OTF.otf in Resources */,
+				32A01A622817E7980041389C /* Soccer-Match-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32A01A2A2817D7760041389C /* ContentView.swift in Sources */,
+				32A01A532817D8A90041389C /* LaunchPageView.swift in Sources */,
 				32A01A282817D7760041389C /* Soccer_MatchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +439,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Soccer_Match/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Soccer-Match-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +468,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Soccer_Match/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Soccer-Match-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

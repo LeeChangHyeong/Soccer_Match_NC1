@@ -72,7 +72,7 @@ struct LoginPageView: View {
                     .cornerRadius(20)
             })
             .fullScreenCover(isPresented: $Login){
-                MainPageView()
+                MyTabView()
             }
                 
                 Button(action: {

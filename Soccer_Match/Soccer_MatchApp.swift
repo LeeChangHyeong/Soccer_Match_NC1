@@ -11,7 +11,7 @@ import SwiftUI
 struct Soccer_MatchApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LaunchPageView()
         }
     }
 }

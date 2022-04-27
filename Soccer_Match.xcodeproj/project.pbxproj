@@ -20,7 +20,11 @@
 		32AC128628180C29001F1A0A /* LoginPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AC128528180C29001F1A0A /* LoginPageView.swift */; };
 		32AD772D28181C4D0031D97D /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD772C28181C4D0031D97D /* MainPageView.swift */; };
 		32AD772F281827930031D97D /* GmarketSansTTFMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32AD772E281827930031D97D /* GmarketSansTTFMedium.ttf */; };
-		32AD773128182E2D0031D97D /* MainButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD773028182E2D0031D97D /* MainButtonStyle.swift */; };
+		32AD773128182E2D0031D97D /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD773028182E2D0031D97D /* ButtonStyle.swift */; };
+		32AD7737281842380031D97D /* MyTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD7734281842240031D97D /* MyTabView.swift */; };
+		32AD773A281847DE0031D97D /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD7739281847DE0031D97D /* MyPageView.swift */; };
+		32AD773D28190A7D0031D97D /* TeamPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD773C28190A7D0031D97D /* TeamPageView.swift */; };
+		32AD7743281925380031D97D /* ReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD7742281925380031D97D /* ReservationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +61,11 @@
 		32AC128528180C29001F1A0A /* LoginPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageView.swift; sourceTree = "<group>"; };
 		32AD772C28181C4D0031D97D /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
 		32AD772E281827930031D97D /* GmarketSansTTFMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFMedium.ttf; sourceTree = "<group>"; };
-		32AD773028182E2D0031D97D /* MainButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonStyle.swift; sourceTree = "<group>"; };
+		32AD773028182E2D0031D97D /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		32AD7734281842240031D97D /* MyTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyTabView.swift; path = Soccer_MatchUITests/MyTabView.swift; sourceTree = SOURCE_ROOT; };
+		32AD7739281847DE0031D97D /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
+		32AD773C28190A7D0031D97D /* TeamPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPageView.swift; sourceTree = "<group>"; };
+		32AD7742281925380031D97D /* ReservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,16 +116,19 @@
 		32A01A262817D7760041389C /* Soccer_Match */ = {
 			isa = PBXGroup;
 			children = (
+				32AD773B28190A5F0031D97D /* TeamPage */,
 				32AD772B28181C2E0031D97D /* MainPage */,
 				32AC128428180C05001F1A0A /* LoginPage */,
 				32A01A592817E5F40041389C /* Soccer-Match-Info.plist */,
 				32A01A542817E3570041389C /* Font */,
+				32AD7734281842240031D97D /* MyTabView.swift */,
 				32A01A272817D7760041389C /* Soccer_MatchApp.swift */,
+				32AD7738281847B10031D97D /* MyPage */,
 				32A01A522817D8A90041389C /* LaunchPageView.swift */,
 				32A01A292817D7760041389C /* ContentView.swift */,
 				32A01A2B2817D7760041389C /* Assets.xcassets */,
 				32A01A2D2817D7760041389C /* Preview Content */,
-				32AD773028182E2D0031D97D /* MainButtonStyle.swift */,
+				32AD773028182E2D0031D97D /* ButtonStyle.swift */,
 			);
 			path = Soccer_Match;
 			sourceTree = "<group>";
@@ -168,8 +179,25 @@
 			isa = PBXGroup;
 			children = (
 				32AD772C28181C4D0031D97D /* MainPageView.swift */,
+				32AD7742281925380031D97D /* ReservationView.swift */,
 			);
 			path = MainPage;
+			sourceTree = "<group>";
+		};
+		32AD7738281847B10031D97D /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				32AD7739281847DE0031D97D /* MyPageView.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		32AD773B28190A5F0031D97D /* TeamPage */ = {
+			isa = PBXGroup;
+			children = (
+				32AD773C28190A7D0031D97D /* TeamPageView.swift */,
+			);
+			path = TeamPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,9 +334,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				32A01A2A2817D7760041389C /* ContentView.swift in Sources */,
+				32AD773D28190A7D0031D97D /* TeamPageView.swift in Sources */,
+				32AD773A281847DE0031D97D /* MyPageView.swift in Sources */,
 				32A01A532817D8A90041389C /* LaunchPageView.swift in Sources */,
-				32AD773128182E2D0031D97D /* MainButtonStyle.swift in Sources */,
+				32AD773128182E2D0031D97D /* ButtonStyle.swift in Sources */,
 				32AD772D28181C4D0031D97D /* MainPageView.swift in Sources */,
+				32AD7737281842380031D97D /* MyTabView.swift in Sources */,
+				32AD7743281925380031D97D /* ReservationView.swift in Sources */,
 				32A01A282817D7760041389C /* Soccer_MatchApp.swift in Sources */,
 				32AC128628180C29001F1A0A /* LoginPageView.swift in Sources */,
 			);

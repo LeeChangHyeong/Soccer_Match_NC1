@@ -25,6 +25,7 @@
 		32AD773A281847DE0031D97D /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD7739281847DE0031D97D /* MyPageView.swift */; };
 		32AD773D28190A7D0031D97D /* TeamPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD773C28190A7D0031D97D /* TeamPageView.swift */; };
 		32AD7743281925380031D97D /* ReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD7742281925380031D97D /* ReservationView.swift */; };
+		32AD774928193ABC0031D97D /* CreateTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD774828193ABC0031D97D /* CreateTeamView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		32AD7739281847DE0031D97D /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
 		32AD773C28190A7D0031D97D /* TeamPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPageView.swift; sourceTree = "<group>"; };
 		32AD7742281925380031D97D /* ReservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationView.swift; sourceTree = "<group>"; };
+		32AD774828193ABC0031D97D /* CreateTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTeamView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				32AD773C28190A7D0031D97D /* TeamPageView.swift */,
+				32AD774828193ABC0031D97D /* CreateTeamView.swift */,
 			);
 			path = TeamPage;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				32A01A2A2817D7760041389C /* ContentView.swift in Sources */,
 				32AD773D28190A7D0031D97D /* TeamPageView.swift in Sources */,
 				32AD773A281847DE0031D97D /* MyPageView.swift in Sources */,
+				32AD774928193ABC0031D97D /* CreateTeamView.swift in Sources */,
 				32A01A532817D8A90041389C /* LaunchPageView.swift in Sources */,
 				32AD773128182E2D0031D97D /* ButtonStyle.swift in Sources */,
 				32AD772D28181C4D0031D97D /* MainPageView.swift in Sources */,

@@ -19,7 +19,7 @@ struct TeamPageView: View {
                 .preferredColorScheme(.dark)
             VStack{
             VStack{
-                NavigationLink(destination: EmptyView()) {
+                NavigationLink(destination: CreateTeamView()) {
                     MainButtonStyle(Title: "팀 생성하기", SubTitle: "팀을 생성하여 지역, 전국 랭킹에 도전해보세요 !!")
                 }
                 

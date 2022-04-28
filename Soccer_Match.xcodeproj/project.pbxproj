@@ -26,6 +26,8 @@
 		32AD773D28190A7D0031D97D /* TeamPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD773C28190A7D0031D97D /* TeamPageView.swift */; };
 		32AD7743281925380031D97D /* ReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD7742281925380031D97D /* ReservationView.swift */; };
 		32AD774928193ABC0031D97D /* CreateTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD774828193ABC0031D97D /* CreateTeamView.swift */; };
+		32B67823281A62F8004E6A80 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B67822281A62F8004E6A80 /* test.swift */; };
+		32B67828281A8B3D004E6A80 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B67827281A8B3D004E6A80 /* Font.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		32AD773C28190A7D0031D97D /* TeamPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPageView.swift; sourceTree = "<group>"; };
 		32AD7742281925380031D97D /* ReservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationView.swift; sourceTree = "<group>"; };
 		32AD774828193ABC0031D97D /* CreateTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTeamView.swift; sourceTree = "<group>"; };
+		32B67822281A62F8004E6A80 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		32B67827281A8B3D004E6A80 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,8 @@
 				32A01A2B2817D7760041389C /* Assets.xcassets */,
 				32A01A2D2817D7760041389C /* Preview Content */,
 				32AD773028182E2D0031D97D /* ButtonStyle.swift */,
+				32B67822281A62F8004E6A80 /* test.swift */,
+				32B67827281A8B3D004E6A80 /* Font.swift */,
 			);
 			path = Soccer_Match;
 			sourceTree = "<group>";
@@ -337,11 +343,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				32A01A2A2817D7760041389C /* ContentView.swift in Sources */,
+				32B67823281A62F8004E6A80 /* test.swift in Sources */,
 				32AD773D28190A7D0031D97D /* TeamPageView.swift in Sources */,
 				32AD773A281847DE0031D97D /* MyPageView.swift in Sources */,
 				32AD774928193ABC0031D97D /* CreateTeamView.swift in Sources */,
 				32A01A532817D8A90041389C /* LaunchPageView.swift in Sources */,
 				32AD773128182E2D0031D97D /* ButtonStyle.swift in Sources */,
+				32B67828281A8B3D004E6A80 /* Font.swift in Sources */,
 				32AD772D28181C4D0031D97D /* MainPageView.swift in Sources */,
 				32AD7737281842380031D97D /* MyTabView.swift in Sources */,
 				32AD7743281925380031D97D /* ReservationView.swift in Sources */,

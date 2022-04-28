@@ -14,20 +14,22 @@ struct MainButtonStyle: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(Title)
-                .font(.custom("GmarketSansTTFMedium", size: 30))
+                .scaledFont(name: "GmarketSansTTFMedium", size: 30)
                 .padding(.horizontal)
                 .padding(.top)
                 .padding(.bottom, 0.1)
             
             Text(SubTitle)
-                .font(.custom("GmarketSansTTFMedium", size: 15))
+                .scaledFont(name: "GmarketSansTTFMedium", size: 15)
                 .padding(.horizontal)
         }
         .foregroundColor(.white)
-        .frame(width: 400, height: 100, alignment: .topLeading)
+//        .frame(width: 400, height: 100, alignment: .topLeading)
+        .frame(maxWidth: .infinity, minHeight: 100, alignment: .topLeading)
         .background(.ultraThinMaterial)
         .cornerRadius(20)
-        
+        .padding()
+    
     }
     
 }
@@ -42,7 +44,7 @@ struct MainButtonStyle2: View {
         
         VStack(alignment: .leading) {
             Text(Title)
-                .font(.custom("GmarketSansTTFMedium", size: 30))
+                .scaledFont(name: "GmarketSansTTFMedium", size: 30)
                 .padding(.horizontal)
                 .padding(.top)
                 .padding(.bottom, 0.1)
@@ -55,9 +57,12 @@ struct MainButtonStyle2: View {
             
         }
         .foregroundColor(.white)
-        .frame(width: 200, height: 130, alignment: .topLeading)
+        //.frame(width: 200, height: 130, alignment: .topLeading)
+        .frame(maxWidth: .infinity, maxHeight: 130, alignment: .topLeading)
         .background(.ultraThinMaterial)
         .cornerRadius(20)
+      
+     
         
         
         

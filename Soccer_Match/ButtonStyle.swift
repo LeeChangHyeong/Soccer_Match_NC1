@@ -14,21 +14,24 @@ struct MainButtonStyle: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(Title)
-                .scaledFont(name: "GmarketSansTTFMedium", size: 30)
+                .scaledFont(name: "GmarketSansTTFMedium", size: 25)
+                // .lineLimit(number: 2)
+            // 두줄까지 가능
                 .padding(.horizontal)
-                .padding(.top)
                 .padding(.bottom, 0.1)
             
             Text(SubTitle)
-                .scaledFont(name: "GmarketSansTTFMedium", size: 15)
+                .scaledFont(name: "GmarketSansTTFMedium", size: 10)
                 .padding(.horizontal)
         }
         .foregroundColor(.white)
+        .padding()
 //        .frame(width: 400, height: 100, alignment: .topLeading)
-        .frame(maxWidth: .infinity, minHeight: 100, alignment: .topLeading)
+        .frame(maxWidth: .infinity,alignment: .topLeading)
         .background(.ultraThinMaterial)
         .cornerRadius(20)
         .padding()
+        
     
     }
     
@@ -44,21 +47,19 @@ struct MainButtonStyle2: View {
         
         VStack(alignment: .leading) {
             Text(Title)
-                .scaledFont(name: "GmarketSansTTFMedium", size: 30)
-                .padding(.horizontal)
-                .padding(.top)
-                .padding(.bottom, 0.1)
+                .scaledFont(name: "GmarketSansTTFMedium", size: 25)
+            
+            Spacer()
             
             Image(systemName: SubTitle)
                 .font(.largeTitle)
-                .frame(width: 180, height: 60, alignment: .bottomTrailing)
-            
-            
-            
+                .frame(maxWidth: .infinity, alignment: .bottomTrailing)
         }
         .foregroundColor(.white)
+        .padding()
         //.frame(width: 200, height: 130, alignment: .topLeading)
-        .frame(maxWidth: .infinity, maxHeight: 130, alignment: .topLeading)
+        .frame(maxWidth: .infinity, alignment: .topLeading)
+        .frame(height: 130)
         .background(.ultraThinMaterial)
         .cornerRadius(20)
       

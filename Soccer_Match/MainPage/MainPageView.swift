@@ -14,12 +14,20 @@ struct MainPageView: View {
     var body: some View {
         NavigationView{
             ZStack{
-                Image("BackGround")
-                    .resizable()
-                    .scaledToFill()
-                    .ignoresSafeArea()
-                    .preferredColorScheme(.dark)
-                
+//                Image("BackGround")
+//                    .resizable()
+//                    .scaledToFill()
+//                    .ignoresSafeArea()
+//                    .preferredColorScheme(.dark)
+//                
+                Rectangle()
+                    .overlay(
+                        Image("BackGround")
+                            .resizable()
+                            .scaledToFill()
+                            .ignoresSafeArea()
+                            .preferredColorScheme(.dark)
+                    )
                 
                     VStack {
                         NavigationLink(destination: ReservationView()) {

@@ -21,7 +21,7 @@ struct MyPageView: View {
                             .preferredColorScheme(.dark)
                     )
                 
-                VStack{
+                
                     VStack{
                         NavigationLink(destination: EmptyView(), label: {
                             MainButtonStyle(Title: "개인 상세 전적", SubTitle: "내 경기 결과를 상세하게 !!")
@@ -32,6 +32,7 @@ struct MyPageView: View {
                             NavigationLink(destination: EmptyView(), label: {
                                 MainButtonStyle2(Title: "방명록", SubTitle: "person.2.crop.square.stack.fill")
                             })
+                            .navigationBarTitleDisplayMode(.inline)
                             
                             NavigationLink(destination: EmptyView(), label: {
                                 MainButtonStyle2(Title: "친구 관리", SubTitle: "figure.stand.line.dotted.figure.stand")
@@ -57,7 +58,7 @@ struct MyPageView: View {
                         
                     }
                     
-                }
+                
             }
         } // .navigationViewStyle(.stack) 아이패드 아이폰처럼 쓰기
     }

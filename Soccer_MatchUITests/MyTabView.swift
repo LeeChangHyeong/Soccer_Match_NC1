@@ -9,9 +9,12 @@ import SwiftUI
 
 
 struct MyTabView: View {
+//    @State var teams = [Team]()
+    
     init() {
     UITabBar.appearance().backgroundColor = UIColor.black
     }
+    
     var body: some View {
         
         TabView(){

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3238E950281FCD5A00244C05 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3238E94F281FCD5A00244C05 /* Team.swift */; };
 		32A01A282817D7760041389C /* Soccer_MatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A01A272817D7760041389C /* Soccer_MatchApp.swift */; };
 		32A01A2A2817D7760041389C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A01A292817D7760041389C /* ContentView.swift */; };
 		32A01A2C2817D7760041389C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32A01A2B2817D7760041389C /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3238E94F281FCD5A00244C05 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		32A01A242817D7760041389C /* Soccer_Match.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soccer_Match.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A01A272817D7760041389C /* Soccer_MatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soccer_MatchApp.swift; sourceTree = "<group>"; };
 		32A01A292817D7760041389C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				32AD773028182E2D0031D97D /* ButtonStyle.swift */,
 				32B67822281A62F8004E6A80 /* test.swift */,
 				32B67827281A8B3D004E6A80 /* Font.swift */,
+				3238E94F281FCD5A00244C05 /* Team.swift */,
 			);
 			path = Soccer_Match;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 			files = (
 				32A01A2A2817D7760041389C /* ContentView.swift in Sources */,
 				32B67823281A62F8004E6A80 /* test.swift in Sources */,
+				3238E950281FCD5A00244C05 /* Team.swift in Sources */,
 				32AD773D28190A7D0031D97D /* TeamPageView.swift in Sources */,
 				32AD773A281847DE0031D97D /* MyPageView.swift in Sources */,
 				32AD774928193ABC0031D97D /* CreateTeamView.swift in Sources */,

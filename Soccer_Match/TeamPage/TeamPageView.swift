@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct TeamPageView: View {
+//    @Binding var teams: [Team]
+//    @State var isShowingSheet = false
+    
     var body: some View {
         NavigationView{
             ZStack{
@@ -30,7 +33,12 @@ struct TeamPageView: View {
                 VStack{
                     NavigationLink(destination: CreateTeamView()) {
                         MainButtonStyle(Title: "팀 생성하기", SubTitle: "팀을 생성하여 지역, 전국 랭킹에 도전해보세요 !!")
+                            .navigationBarTitleDisplayMode(.inline)
                     }
+//                    MainButtonStyle(Title: "팀 생성하기", SubTitle: "팀을 생성하여 지역, 전국 랭킹에 도전해보세요 !!")
+//                        .onTapGesture {
+//                            isShowingSheet.toggle()
+//                        }
                 }
 
                     HStack{
@@ -41,7 +49,6 @@ struct TeamPageView: View {
 
                         NavigationLink(destination: EmptyView(), label: {
                             MainButtonStyle2(Title: "전술 보드", SubTitle: "pencil.and.outline")
-
                         })
                     }
                     .padding(.horizontal, 20)

@@ -26,13 +26,14 @@ struct MainPageView: View {
                             .resizable()
                             .scaledToFill()
                             .ignoresSafeArea()
-                            .preferredColorScheme(.dark)
+                          .preferredColorScheme(.dark)
                     )
                 
                     VStack {
                         NavigationLink(destination: ReservationView()) {
                             MainButtonStyle(Title: "구장 예약하기", SubTitle: "가까운 지역 구장을 빠르고 쉽게 예매하세요!!")
                         }
+                        .navigationBarTitleDisplayMode(.inline)
                         NavigationLink(destination: EmptyView()) {
                             MainButtonStyle(Title: "구장별 매칭", SubTitle: "가까운 구장을 선택하여 매칭을 시작하세요!!")
                         }

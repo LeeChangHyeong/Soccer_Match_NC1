@@ -8,18 +8,20 @@
 import SwiftUI
 
 struct TeamPageView: View {
-//    @Binding var teams: [Team]
-//    @State var isShowingSheet = false
-    
+    //    @Binding var teams: [Team]
+    //    @State var isShowingSheet = false
+    @State var teamINTRO: String = ""
+    @State var teamNAME: String = ""
+    @State var touch = false
+    @State private var showingAlert = false
     var body: some View {
         NavigationView{
             ZStack{
-
-//                Image("BackGround4")
-//                    .resizable()
-//                    .scaledToFill()
-//                    .ignoresSafeArea()
-//                    .preferredColorScheme(.dark)
+                //                Image("BackGround4")
+                //                    .resizable()
+                //                    .scaledToFill()
+                //                    .ignoresSafeArea()
+                //                    .preferredColorScheme(.dark)
                 Rectangle()
                     .overlay(
                         Image("BackGround4")
@@ -30,48 +32,91 @@ struct TeamPageView: View {
                     )
                 
                 VStack{
-                VStack{
-                    NavigationLink(destination: CreateTeamView()) {
-                        MainButtonStyle(Title: "팀 생성하기", SubTitle: "팀을 생성하여 지역, 전국 랭킹에 도전해보세요 !!")
-                            .navigationBarTitleDisplayMode(.inline)
+                    VStack{
+                        if touch {
+                            MainButtonStyle(Title: teamNAME, SubTitle: "0W 0L")
+                            
+                            
+                        }else{
+                            NavigationLink(destination: CreateTeamView(touch: $touch, teamINTRO: $teamINTRO, teamNAME: $teamNAME)) {
+                                MainButtonStyle(Title: "팀 생성하기", SubTitle: "팀을 생성하여 지역, 전국 랭킹에 도전해보세요 !!")
+                                    .navigationBarTitleDisplayMode(.inline)
+                            }
+                        }
+                        //                    MainButtonStyle(Title: "팀 생성하기", SubTitle: "팀을 생성하여 지역, 전국 랭킹에 도전해보세요 !!")
+                        //                        .onTapGesture {
+                        //                            isShowingSheet.toggle()
+                        //                        }
                     }
-//                    MainButtonStyle(Title: "팀 생성하기", SubTitle: "팀을 생성하여 지역, 전국 랭킹에 도전해보세요 !!")
-//                        .onTapGesture {
-//                            isShowingSheet.toggle()
-//                        }
-                }
-
+                    
                     HStack{
-                        NavigationLink(destination: EmptyView(), label: {
-                            MainButtonStyle2(Title: "팀 관리", SubTitle: "person.3.sequence.fill")
-
-                        })
-
-                        NavigationLink(destination: EmptyView(), label: {
-                            MainButtonStyle2(Title: "전술 보드", SubTitle: "pencil.and.outline")
-                        })
+                        if touch{
+                            NavigationLink(destination: EmptyView(), label: {
+                                MainButtonStyle2(Title: "팀 관리", SubTitle: "person.3.sequence.fill")
+                                
+                            })
+                            
+                            NavigationLink(destination: EmptyView(), label: {
+                                MainButtonStyle2(Title: "전술 보드", SubTitle: "pencil.and.outline")
+                            })
+                            
+                        }else {
+                            MainButtonStyle2(Title: "팀 관리", SubTitle: "person.3.sequence.fill").onTapGesture {
+                                showingAlert = true
+                            }.alert(isPresented: $showingAlert){
+                                Alert(title: Text("팀을 먼저 생성해 주세요 !!"))
+                            }
+                            
+                            MainButtonStyle2(Title: "전술 보드", SubTitle: "pencil.and.outline").onTapGesture {
+                                showingAlert = true
+                            }.alert(isPresented: $showingAlert){
+                                Alert(title: Text("팀을 먼저 생성해 주세요 !!"))
+                            }
+                            
+                        
+                            
+                       
+                        }
+                        
                     }
                     .padding(.horizontal, 20)
-
-
+                    
+                    
                     HStack{
-
-                        NavigationLink(destination: EmptyView(), label: {
-                            MainButtonStyle2(Title: "팀 전적", SubTitle: "note.text")
-
-                        })
-                        NavigationLink(destination: EmptyView(), label: {
-                            MainButtonStyle2(Title: "팀 랭킹", SubTitle: "crown.fill")
-
-                        })
-
+                        if touch{
+                            NavigationLink(destination: EmptyView(), label: {
+                                MainButtonStyle2(Title: "팀 전적", SubTitle: "note.text")
+                                
+                            })
+                            NavigationLink(destination: EmptyView(), label: {
+                                MainButtonStyle2(Title: "팀 랭킹", SubTitle: "crown.fill")
+                                
+                            })
+                            
+                        } else {
+                            MainButtonStyle2(Title: "팀 전적", SubTitle: "note.text").onTapGesture {
+                                showingAlert = true
+                            }.alert(isPresented: $showingAlert){
+                                Alert(title: Text("팀을 먼저 생성해 주세요 !!"))
+                            }
+                            MainButtonStyle2(Title: "팀 랭킹", SubTitle: "crown.fill").onTapGesture {
+                                showingAlert = true
+                            }.alert(isPresented: $showingAlert){
+                                Alert(title: Text("팀을 먼저 생성해 주세요 !!"))
+                            }
+                            
+                        }
+                        
+                     
+                        
                     }
                     .padding(.horizontal, 20)
                 }
-
+                
             }
+           
         }
-
+        
     }
 }
 

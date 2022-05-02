@@ -49,6 +49,11 @@ struct ImagePicker: UIViewControllerRepresentable {
 
 
 struct CreateTeamView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @Binding var touch: Bool
+    @Binding var teamINTRO: String
+    @Binding var teamNAME: String
+    
 //    @Binding var isShowingSheet: Bool
     @State private var SelectLogo: Image = Image(systemName: "camera.fill")
     // 이미지 선택창 선택 여부
@@ -59,22 +64,20 @@ struct CreateTeamView: View {
     // 사진 앨범 선택 여부
     @State private var onPhotoLibrary = false
     
+   
     
 //    @Binding var teams: [Team]
     
-    @State var teamName: String = ""
-    @State var teamIntro: String = ""
+//    @State var teamName: String = ""
+//    @State var teamIntro: String = ""
     
     // 값이 수정되도 인식되게 만듬
     @State private var selectCity = ""
     
+    
     // 지역
     var citys = ["서울", "부산", "대구", "인천", "광주", "대전", "울산", "세종", "경기", "강원", "충북", "충남", "전북", "전남", "경북", "경남", "제주"]
     
-    init() {
-        // TextEditor 배경색 변경
-        UITextView.appearance().backgroundColor = .clear
-    }
     var body: some View {
         VStack {
             ZStack{
@@ -100,6 +103,8 @@ struct CreateTeamView: View {
                             } else {
                                 Logo?
                                     .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 200, height: 200)
                                     .clipShape(Circle())
                             }
                             
@@ -129,7 +134,7 @@ struct CreateTeamView: View {
                             Text("팀 이름")
                             .frame(maxWidth:.infinity, alignment: .bottomLeading)
                             
-                        TextField("TeamName", text: $teamName)
+                        TextField("TeamName", text: $teamNAME)
                             .padding()
                                 .autocapitalization(.none)
                                 .disableAutocorrection(true)
@@ -158,15 +163,19 @@ struct CreateTeamView: View {
 //                        HStack{
                             Text("팀 소개")
                             .frame(maxWidth:.infinity, alignment: .bottomLeading)
-                            TextEditor(text: $teamIntro)
+                            TextEditor(text: $teamINTRO)
                                 .padding()
                                 .frame(maxWidth:.infinity)
                                 .frame(minHeight: 130)
                                 .background(.white)
+//                                .colorMultiply(.white)
                                 .foregroundColor(.black)
                                 .autocapitalization(.none)
                                 .disableAutocorrection(true)
                                 .cornerRadius(10)
+                                .onAppear {
+                                                UITextView.appearance().backgroundColor = .clear
+                                            }
                             
                             
                             
@@ -210,8 +219,10 @@ struct CreateTeamView: View {
                         Spacer()
                         
                         Button("팀 생성"){
-                            if teamName.count > 0
-                                && teamIntro.count > 0 && Logo != nil {
+                            if teamNAME.count > 0
+                                && teamINTRO.count > 0 && Logo != nil {
+                                self.presentationMode.wrappedValue.dismiss()
+                                touch.toggle()
 //                                isShowingSheet.toggle()
 //                                teams.append(Team(teamName: teamName, teamIntro: teamIntro))
                             }
@@ -220,6 +231,7 @@ struct CreateTeamView: View {
                         .padding(7)
                         .background(.blue)
                         .cornerRadius(10)
+                        .padding(.bottom, 10)
                         
                         Spacer()
                         
@@ -227,13 +239,13 @@ struct CreateTeamView: View {
                     .padding(.horizontal, 20)
                 }
                 // 카메라 선택
-                .sheet(isPresented: $onCamera) {
-                    ImagePicker(sourceType: .photoLibrary){ (pickedImage) in
-                        Logo = Image(uiImage: pickedImage)
-                        
-                        
-                    }
-                }
+//                .sheet(isPresented: $onCamera) {
+//                    ImagePicker(sourceType: .camera){ (pickedImage) in
+//                        Logo = Image(uiImage: pickedImage)
+//
+//
+//                    }
+//                }
                 // 사진 앨범 선택
                 .sheet(isPresented: $onPhotoLibrary) {
                     ImagePicker(sourceType: .photoLibrary) { (pickedImage) in
@@ -246,10 +258,10 @@ struct CreateTeamView: View {
                     ActionSheet(title: Text("이미지 선택하기"),
                                 message: nil,
                                 buttons: [
-                                    .default(
-                                        Text("카메라"),
-                                        action:  {onCamera = true}
-                                    ),
+//                                    .default(
+//                                        Text("카메라"),
+//                                        action:  {onCamera = true}
+//                                    ),
                                     .default(
                                         Text("사진 앨범"),
                                         action: {onPhotoLibrary = true}
@@ -261,11 +273,5 @@ struct CreateTeamView: View {
                 }
             }
         }
-    }
-}
-
-struct CreateTeamView_Previews: PreviewProvider {
-    static var previews: some View {
-        CreateTeamView()
     }
 }

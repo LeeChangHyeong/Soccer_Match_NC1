@@ -27,6 +27,7 @@
 		32AD773D28190A7D0031D97D /* TeamPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD773C28190A7D0031D97D /* TeamPageView.swift */; };
 		32AD7743281925380031D97D /* ReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD7742281925380031D97D /* ReservationView.swift */; };
 		32AD774928193ABC0031D97D /* CreateTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD774828193ABC0031D97D /* CreateTeamView.swift */; };
+		32AE4D12281FFAF000782645 /* MyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AE4D11281FFAF000782645 /* MyMapView.swift */; };
 		32B67823281A62F8004E6A80 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B67822281A62F8004E6A80 /* test.swift */; };
 		32B67828281A8B3D004E6A80 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B67827281A8B3D004E6A80 /* Font.swift */; };
 /* End PBXBuildFile section */
@@ -72,6 +73,7 @@
 		32AD773C28190A7D0031D97D /* TeamPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPageView.swift; sourceTree = "<group>"; };
 		32AD7742281925380031D97D /* ReservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationView.swift; sourceTree = "<group>"; };
 		32AD774828193ABC0031D97D /* CreateTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTeamView.swift; sourceTree = "<group>"; };
+		32AE4D11281FFAF000782645 /* MyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapView.swift; sourceTree = "<group>"; };
 		32B67822281A62F8004E6A80 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		32B67827281A8B3D004E6A80 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -191,6 +193,7 @@
 			children = (
 				32AD772C28181C4D0031D97D /* MainPageView.swift */,
 				32AD7742281925380031D97D /* ReservationView.swift */,
+				32AE4D11281FFAF000782645 /* MyMapView.swift */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 			files = (
 				32A01A2A2817D7760041389C /* ContentView.swift in Sources */,
 				32B67823281A62F8004E6A80 /* test.swift in Sources */,
+				32AE4D12281FFAF000782645 /* MyMapView.swift in Sources */,
 				3238E950281FCD5A00244C05 /* Team.swift in Sources */,
 				32AD773D28190A7D0031D97D /* TeamPageView.swift in Sources */,
 				32AD773A281847DE0031D97D /* MyPageView.swift in Sources */,
@@ -521,6 +525,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Soccer-Match-Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현재 위치가 필요합니다 허용해주세요";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -551,6 +556,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Soccer-Match-Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현재 위치가 필요합니다 허용해주세요";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

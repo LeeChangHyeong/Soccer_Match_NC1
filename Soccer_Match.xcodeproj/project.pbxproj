@@ -30,6 +30,8 @@
 		32AE4D12281FFAF000782645 /* MyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AE4D11281FFAF000782645 /* MyMapView.swift */; };
 		32B67823281A62F8004E6A80 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B67822281A62F8004E6A80 /* test.swift */; };
 		32B67828281A8B3D004E6A80 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B67827281A8B3D004E6A80 /* Font.swift */; };
+		32D8D0A02820FD9000B9049C /* TeamManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D8D09F2820FD9000B9049C /* TeamManagementView.swift */; };
+		32D8D0A22821011C00B9049C /* TeamDetail_Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D8D0A12821011C00B9049C /* TeamDetail_Info.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		32AE4D11281FFAF000782645 /* MyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapView.swift; sourceTree = "<group>"; };
 		32B67822281A62F8004E6A80 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		32B67827281A8B3D004E6A80 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		32D8D09F2820FD9000B9049C /* TeamManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamManagementView.swift; sourceTree = "<group>"; };
+		32D8D0A12821011C00B9049C /* TeamDetail_Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetail_Info.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +215,8 @@
 			children = (
 				32AD773C28190A7D0031D97D /* TeamPageView.swift */,
 				32AD774828193ABC0031D97D /* CreateTeamView.swift */,
+				32D8D09F2820FD9000B9049C /* TeamManagementView.swift */,
+				32D8D0A12821011C00B9049C /* TeamDetail_Info.swift */,
 			);
 			path = TeamPage;
 			sourceTree = "<group>";
@@ -350,6 +356,7 @@
 			files = (
 				32A01A2A2817D7760041389C /* ContentView.swift in Sources */,
 				32B67823281A62F8004E6A80 /* test.swift in Sources */,
+				32D8D0A02820FD9000B9049C /* TeamManagementView.swift in Sources */,
 				32AE4D12281FFAF000782645 /* MyMapView.swift in Sources */,
 				3238E950281FCD5A00244C05 /* Team.swift in Sources */,
 				32AD773D28190A7D0031D97D /* TeamPageView.swift in Sources */,
@@ -361,6 +368,7 @@
 				32AD772D28181C4D0031D97D /* MainPageView.swift in Sources */,
 				32AD7737281842380031D97D /* MyTabView.swift in Sources */,
 				32AD7743281925380031D97D /* ReservationView.swift in Sources */,
+				32D8D0A22821011C00B9049C /* TeamDetail_Info.swift in Sources */,
 				32A01A282817D7760041389C /* Soccer_MatchApp.swift in Sources */,
 				32AC128628180C29001F1A0A /* LoginPageView.swift in Sources */,
 			);

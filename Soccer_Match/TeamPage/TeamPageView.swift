@@ -14,6 +14,7 @@ struct TeamPageView: View {
     @State var teamNAME: String = ""
     @State var touch = false
     @State private var showingAlert = false
+    @State var teamLOGO: Image?
     var body: some View {
         NavigationView{
             ZStack{
@@ -34,11 +35,43 @@ struct TeamPageView: View {
                 VStack{
                     VStack{
                         if touch {
-                            MainButtonStyle(Title: teamNAME, SubTitle: "0W 0L")
+//                            MainButtonStyle(Title: teamNAME, SubTitle: "0W 0L")
+                            HStack(){
+                                teamLOGO?
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 70, height: 70)
+                                    .clipShape(Circle())
+                                
+                                VStack(alignment: .leading) {
+                                    Text(teamNAME)
+                                        .scaledFont(name: "GmarketSansTTFMedium", size: 25)
+                                        // .lineLimit(number: 2)
+                                    // 두줄까지 가능
+                                        .padding(.horizontal)
+                                        .padding(.bottom, 0.1)
+                                    
+                                    Text("0W 0L")
+                                        .scaledFont(name: "GmarketSansTTFMedium", size: 10)
+                                        .padding(.horizontal)
+                                }
+                                
+                            }.foregroundColor(.white)
+                                .padding()
+                        //        .frame(width: 400, height: 100, alignment: .topLeading)
+                                .frame(maxWidth: .infinity,alignment: .topLeading)
+                                .background(.ultraThinMaterial)
+                                .cornerRadius(20)
+                                .padding()
+                                
+                            
+                            
+                            
+                            
                             
                             
                         }else{
-                            NavigationLink(destination: CreateTeamView(touch: $touch, teamINTRO: $teamINTRO, teamNAME: $teamNAME)) {
+                            NavigationLink(destination: CreateTeamView(touch: $touch, teamINTRO: $teamINTRO, teamNAME: $teamNAME, teamLOGO: $teamLOGO)) {
                                 MainButtonStyle(Title: "팀 생성하기", SubTitle: "팀을 생성하여 지역, 전국 랭킹에 도전해보세요 !!")
                                     .navigationBarTitleDisplayMode(.inline)
                             }

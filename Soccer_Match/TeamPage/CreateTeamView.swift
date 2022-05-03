@@ -115,32 +115,44 @@ struct CreateTeamView: View {
                                 .onTapGesture {
                                     presentsImagePicker = true
                                 }
-                            SelectLogo
-                                .foregroundColor(.black)
+                            VStack{
+                            
+                                
+                            SelectLogo.foregroundColor(.black)
+                            
+                                Text("로고를 골라주세요")
+                                    .scaledFont(name: "GmarketSansTTFMedium", size: 10)
+                                    .padding(10)
+                                    .background(.white.opacity(0.5))
+                                    .cornerRadius(20)
+                                    .foregroundColor(.black)
+                            }
                         }
                     }
                     .padding(.bottom, 10)
                     
                     //                    Text(Logo == nil ? "로고를 골라주세요" : "")
                     // Logo가 비어있을때 : 있을때
-                    if teamLOGO == nil {
-                        ZStack{
-                            Text("로고를 골라주세요")
-                                .scaledFont(name: "GmarketSansTTFMedium", size: 10)
-                                .padding(10)
-                                .background(.white.opacity(0.5))
-                                .cornerRadius(20)
-                                .foregroundColor(.black)
-                            
-                            
-                        }
-                        
-                        Spacer()
-                        
-                    }
+//                    if teamLOGO == nil {
+//                        ZStack{
+//                            Text("로고를 골라주세요")
+//                                .scaledFont(name: "GmarketSansTTFMedium", size: 10)
+//                                .padding(10)
+//                                .background(.white.opacity(0.5))
+//                                .cornerRadius(20)
+//                                .foregroundColor(.black)
+//
+//
+//                        }
+//
+//                        Spacer()
+//
+//                    }
                     //                        HStack{
                     Text("팀 이름")
                         .frame(maxWidth:.infinity, alignment: .bottomLeading)
+                        .scaledFont(name: "GmarketSansTTFMedium", size: 14)
+                        
                     
                     TextField("TeamName", text: $teamNAME)
                         .padding()
@@ -148,6 +160,7 @@ struct CreateTeamView: View {
                         .disableAutocorrection(true)
                         .background(RoundedRectangle(cornerRadius: 10).fill(Color.white))
                         .foregroundColor(.black)
+                      
                     
                     
                     
@@ -170,11 +183,13 @@ struct CreateTeamView: View {
                     
                     //                        HStack{
                     Text("팀 소개")
+                        .scaledFont(name: "GmarketSansTTFMedium", size: 14)
                         .frame(maxWidth:.infinity, alignment: .bottomLeading)
+                        .padding(.top, 30)
                     TextEditor(text: $teamINTRO)
                         .padding()
                         .frame(maxWidth:.infinity)
-                        .frame(minHeight: 130)
+                        .frame(maxHeight: 110)
                         .background(.white)
                     //                                .colorMultiply(.white)
                         .foregroundColor(.black)
@@ -212,6 +227,7 @@ struct CreateTeamView: View {
                     //                        }.padding(.horizontal, 40)
                     HStack{
                         Text("팀 지역")
+                            .scaledFont(name: "GmarketSansTTFMedium", size: 14)
                             .frame(maxWidth:.infinity, alignment: .bottomLeading)
                         
                         
@@ -224,6 +240,7 @@ struct CreateTeamView: View {
                             .cornerRadius(10)
                         
                     }
+                    .padding(.top,30)
                     Spacer()
                     
                     Button("팀 생성"){
@@ -236,7 +253,7 @@ struct CreateTeamView: View {
                         }
                     }
                     .foregroundColor(.white)
-                    .padding(7)
+                    .padding(14)
                     .background(.blue)
                     .cornerRadius(10)
                     .padding(.bottom, 10)

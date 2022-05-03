@@ -13,7 +13,61 @@ struct TeamDetail_Info: View {
     @Binding var teamNAME: String
     @Binding var teamLOGO: Image?
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Rectangle()
+                .overlay(
+                    Image("BackGround4")
+                        .resizable()
+                        .scaledToFill()
+                        .ignoresSafeArea()
+                        .preferredColorScheme(.dark)
+                )
+            VStack{
+                Spacer()
+                teamLOGO?
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 200, height: 200)
+                    .clipShape(Circle())
+                Spacer()
+                VStack{
+                    Text("팀 이름\n")
+                        .frame(maxWidth:.infinity, alignment: .bottomLeading)
+                        .scaledFont(name: "GmarketSansTTFMedium", size: 25)
+                        .padding(.horizontal)
+                        
+                    Text(teamNAME)
+                        .frame(maxWidth:.infinity, alignment: .bottomLeading)
+                        .scaledFont(name: "GmarketSansTTFMedium", size: 20)
+                        .padding(.horizontal)
+                }
+                .foregroundColor(.black)
+                .padding()
+                .background(.white)
+                .cornerRadius(20)
+                .padding()
+                
+                VStack{
+                    Text("팀 소개\n")
+                        .frame(maxWidth:.infinity, alignment: .bottomLeading)
+                        .scaledFont(name: "GmarketSansTTFMedium", size: 25)
+                        .padding(.horizontal)
+                    Text(teamINTRO)
+                        .frame(maxWidth:.infinity, alignment: .bottomLeading)
+                        .scaledFont(name: "GmarketSansTTFMedium", size: 20)
+                        .padding(.horizontal)
+                }
+                .foregroundColor(.black)
+                .padding()
+                .background(.white)
+                .cornerRadius(20)
+                .padding()
+                Spacer()
+                
+                
+            }
+            
+        }
     }
+    
 }
-

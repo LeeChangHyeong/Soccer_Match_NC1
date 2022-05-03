@@ -21,7 +21,7 @@ struct MainButtonStyle: View {
                 .padding(.bottom, 0.1)
             
             Text(SubTitle)
-                .scaledFont(name: "GmarketSansTTFMedium", size: 10)
+                .scaledFont(name: "GmarketSansTTFMedium", size: 12)
                 .padding(.horizontal)
         }
         .foregroundColor(.white)

@@ -88,7 +88,7 @@ struct TeamPageView: View {
                     
                     HStack{
                         if touch{
-                            NavigationLink(destination: EmptyView(), label: {
+                            NavigationLink(destination: TeamManagementView(teamLOGO: $teamLOGO, teamNAME: $teamNAME), label: {
                                 MainButtonStyle2(Title: "팀 관리", SubTitle: "person.3.sequence.fill")
                                 
                             })

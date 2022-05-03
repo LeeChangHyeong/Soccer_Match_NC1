@@ -8,6 +8,7 @@
 import SwiftUI
 import UIKit
 
+
 #if canImport(UIKit)
 extension View {
     func hideKeyboard() {
@@ -15,6 +16,8 @@ extension View {
     }
 }
 #endif
+
+
 
 
 struct ImagePicker: UIViewControllerRepresentable {
@@ -57,6 +60,7 @@ struct ImagePicker: UIViewControllerRepresentable {
 
 
 struct CreateTeamView: View {
+    
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @Binding var touch: Bool
     @Binding var teamINTRO: String
@@ -88,6 +92,7 @@ struct CreateTeamView: View {
     var citys = ["서울", "부산", "대구", "인천", "광주", "대전", "울산", "세종", "경기", "강원", "충북", "충남", "전북", "전남", "경북", "경남", "제주"]
     
     var body: some View {
+        
         
         ZStack{
             Rectangle()
@@ -306,3 +311,4 @@ struct CreateTeamView: View {
         }
     }
 }
+

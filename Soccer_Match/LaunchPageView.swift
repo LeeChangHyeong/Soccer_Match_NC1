@@ -24,14 +24,14 @@ struct LaunchPageView: View {
                     .frame(width: 300, height: 300)
                     .clipShape(Circle())
 //                    .shadow(color: .gray, radius: 10, x: 10, y: 10)
-                    .overlay(
-                        Circle().stroke(Color.black,
-                                        lineWidth: 10))
+//                    .overlay(
+//                        Circle().stroke(Color.black,
+//                                        lineWidth: 10))
                 Spacer()
                 Text("모여모여 풋살")
                     .font(.custom("BM JUA_OTF", size: 50))
 //                    .shadow(color: .gray, radius: 10, x: 5, y: 5)
-                Spacer()
+                    .padding(.bottom, 200)
                 
                 //.clipped()
                 //.edgesIgnoringSafeArea(.all)

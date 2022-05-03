@@ -37,7 +37,7 @@ struct MainPageView: View {
                         NavigationLink(destination: EmptyView()) {
                             MainButtonStyle(Title: "구장별 매칭", SubTitle: "가까운 구장을 선택하여 매칭을 시작하세요!!")
                         }
-                        .padding(.vertical, 35)
+                        .padding(.vertical, 5)
                         NavigationLink(destination: EmptyView()) {
                             MainButtonStyle(Title: "용병 구인/구직", SubTitle: "혼자라서 못한다고요? 팀 인원이 부족하다구요?")
                         }

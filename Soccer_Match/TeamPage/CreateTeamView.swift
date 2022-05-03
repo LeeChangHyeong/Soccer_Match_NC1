@@ -97,7 +97,8 @@ struct CreateTeamView: View {
                         .scaledToFill()
                         .ignoresSafeArea()
                         .preferredColorScheme(.dark)
-                )
+                    
+                ).overlay(.black.opacity(0.3))
             ZStack{
                 VStack() {
                     ZStack() {
@@ -107,11 +108,11 @@ struct CreateTeamView: View {
                             teamLOGO
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: 200, height: 200)
+                                .frame(width: 150, height: 150)
                                 .clipShape(Circle())
                         } else {
                             Circle()
-                                .frame(width: 200, height: 200)
+                                .frame(width: 150, height: 150)
                                 .onTapGesture {
                                     presentsImagePicker = true
                                 }
@@ -119,17 +120,19 @@ struct CreateTeamView: View {
                             
                                 
                             SelectLogo.foregroundColor(.black)
+                                    .font(.largeTitle)
+                                    .opacity(0.3)
+                                    
                             
                                 Text("로고를 골라주세요")
                                     .scaledFont(name: "GmarketSansTTFMedium", size: 10)
-                                    .padding(10)
-                                    .background(.white.opacity(0.5))
-                                    .cornerRadius(20)
+                                    .padding(.top, 5)
                                     .foregroundColor(.black)
+                                    .opacity(0.3)
                             }
                         }
                     }
-                    .padding(.bottom, 10)
+                    .padding(.vertical, 30)
                     
                     //                    Text(Logo == nil ? "로고를 골라주세요" : "")
                     // Logo가 비어있을때 : 있을때

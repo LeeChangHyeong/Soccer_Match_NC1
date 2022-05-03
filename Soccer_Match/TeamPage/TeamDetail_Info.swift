@@ -23,13 +23,13 @@ struct TeamDetail_Info: View {
                         .preferredColorScheme(.dark)
                 )
             VStack{
-                Spacer()
+
                 teamLOGO?
                     .resizable()
                     .scaledToFill()
                     .frame(width: 200, height: 200)
                     .clipShape(Circle())
-                Spacer()
+                    .padding(.top, 60)
                 VStack{
                     Text("팀 이름\n")
                         .frame(maxWidth:.infinity, alignment: .bottomLeading)
@@ -45,7 +45,9 @@ struct TeamDetail_Info: View {
                 .padding()
                 .background(.white)
                 .cornerRadius(20)
-                .padding()
+                .padding(.top)
+                .padding(.horizontal)
+                .padding(.bottom, 12)
                 
                 VStack{
                     Text("팀 소개\n")
@@ -61,11 +63,13 @@ struct TeamDetail_Info: View {
                 .padding()
                 .background(.white)
                 .cornerRadius(20)
-                .padding()
+                .padding(.horizontal)
+                
                 Spacer()
                 
                 
             }
+            
             
         }
     }

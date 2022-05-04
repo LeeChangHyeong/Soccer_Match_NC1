@@ -30,6 +30,8 @@
 		32AE4D12281FFAF000782645 /* MyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AE4D11281FFAF000782645 /* MyMapView.swift */; };
 		32B67823281A62F8004E6A80 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B67822281A62F8004E6A80 /* test.swift */; };
 		32B67828281A8B3D004E6A80 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B67827281A8B3D004E6A80 /* Font.swift */; };
+		32B949AB282247E000948B03 /* TecticalBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B949AA282247E000948B03 /* TecticalBoard.swift */; };
+		32B949AE2822540E00948B03 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B949AD2822540E00948B03 /* SwiftUIView.swift */; };
 		32D8D0A02820FD9000B9049C /* TeamManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D8D09F2820FD9000B9049C /* TeamManagementView.swift */; };
 		32D8D0A22821011C00B9049C /* TeamDetail_Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D8D0A12821011C00B9049C /* TeamDetail_Info.swift */; };
 /* End PBXBuildFile section */
@@ -78,6 +80,8 @@
 		32AE4D11281FFAF000782645 /* MyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapView.swift; sourceTree = "<group>"; };
 		32B67822281A62F8004E6A80 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		32B67827281A8B3D004E6A80 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		32B949AA282247E000948B03 /* TecticalBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TecticalBoard.swift; sourceTree = "<group>"; };
+		32B949AD2822540E00948B03 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		32D8D09F2820FD9000B9049C /* TeamManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamManagementView.swift; sourceTree = "<group>"; };
 		32D8D0A12821011C00B9049C /* TeamDetail_Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetail_Info.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -217,6 +221,8 @@
 				32AD774828193ABC0031D97D /* CreateTeamView.swift */,
 				32D8D09F2820FD9000B9049C /* TeamManagementView.swift */,
 				32D8D0A12821011C00B9049C /* TeamDetail_Info.swift */,
+				32B949AA282247E000948B03 /* TecticalBoard.swift */,
+				32B949AD2822540E00948B03 /* SwiftUIView.swift */,
 			);
 			path = TeamPage;
 			sourceTree = "<group>";
@@ -355,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32A01A2A2817D7760041389C /* ContentView.swift in Sources */,
+				32B949AB282247E000948B03 /* TecticalBoard.swift in Sources */,
 				32B67823281A62F8004E6A80 /* test.swift in Sources */,
 				32D8D0A02820FD9000B9049C /* TeamManagementView.swift in Sources */,
 				32AE4D12281FFAF000782645 /* MyMapView.swift in Sources */,
@@ -362,6 +369,7 @@
 				32AD773D28190A7D0031D97D /* TeamPageView.swift in Sources */,
 				32AD773A281847DE0031D97D /* MyPageView.swift in Sources */,
 				32AD774928193ABC0031D97D /* CreateTeamView.swift in Sources */,
+				32B949AE2822540E00948B03 /* SwiftUIView.swift in Sources */,
 				32A01A532817D8A90041389C /* LaunchPageView.swift in Sources */,
 				32AD773128182E2D0031D97D /* ButtonStyle.swift in Sources */,
 				32B67828281A8B3D004E6A80 /* Font.swift in Sources */,

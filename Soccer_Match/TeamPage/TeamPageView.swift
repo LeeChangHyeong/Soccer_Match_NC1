@@ -52,7 +52,7 @@ struct TeamPageView: View {
                                             .padding(.horizontal)
                                             .padding(.bottom, 5)
                                         
-                                        Text("0W 0L")
+                                        Text("0W 0D 0L")
                                             .scaledFont(name: "GmarketSansTTFMedium", size: 13)
                                             .padding(.horizontal)
                                     }
@@ -93,7 +93,7 @@ struct TeamPageView: View {
                                 
                             })
                             
-                            NavigationLink(destination: EmptyView(), label: {
+                            NavigationLink(destination: TecticalBoard(), label: {
                                 MainButtonStyle2(Title: "전술 보드", SubTitle: "pencil.and.outline")
                             })
                             

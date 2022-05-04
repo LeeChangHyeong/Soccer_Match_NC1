@@ -32,6 +32,7 @@
 		32B67828281A8B3D004E6A80 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B67827281A8B3D004E6A80 /* Font.swift */; };
 		32B949AB282247E000948B03 /* TecticalBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B949AA282247E000948B03 /* TecticalBoard.swift */; };
 		32B949AE2822540E00948B03 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B949AD2822540E00948B03 /* SwiftUIView.swift */; };
+		32B949B028225EA100948B03 /* TeamRankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B949AF28225EA100948B03 /* TeamRankView.swift */; };
 		32D8D0A02820FD9000B9049C /* TeamManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D8D09F2820FD9000B9049C /* TeamManagementView.swift */; };
 		32D8D0A22821011C00B9049C /* TeamDetail_Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D8D0A12821011C00B9049C /* TeamDetail_Info.swift */; };
 /* End PBXBuildFile section */
@@ -82,6 +83,7 @@
 		32B67827281A8B3D004E6A80 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		32B949AA282247E000948B03 /* TecticalBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TecticalBoard.swift; sourceTree = "<group>"; };
 		32B949AD2822540E00948B03 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		32B949AF28225EA100948B03 /* TeamRankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRankView.swift; sourceTree = "<group>"; };
 		32D8D09F2820FD9000B9049C /* TeamManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamManagementView.swift; sourceTree = "<group>"; };
 		32D8D0A12821011C00B9049C /* TeamDetail_Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetail_Info.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -222,6 +224,7 @@
 				32D8D09F2820FD9000B9049C /* TeamManagementView.swift */,
 				32D8D0A12821011C00B9049C /* TeamDetail_Info.swift */,
 				32B949AA282247E000948B03 /* TecticalBoard.swift */,
+				32B949AF28225EA100948B03 /* TeamRankView.swift */,
 				32B949AD2822540E00948B03 /* SwiftUIView.swift */,
 			);
 			path = TeamPage;
@@ -375,6 +378,7 @@
 				32B67828281A8B3D004E6A80 /* Font.swift in Sources */,
 				32AD772D28181C4D0031D97D /* MainPageView.swift in Sources */,
 				32AD7737281842380031D97D /* MyTabView.swift in Sources */,
+				32B949B028225EA100948B03 /* TeamRankView.swift in Sources */,
 				32AD7743281925380031D97D /* ReservationView.swift in Sources */,
 				32D8D0A22821011C00B9049C /* TeamDetail_Info.swift in Sources */,
 				32A01A282817D7760041389C /* Soccer_MatchApp.swift in Sources */,

@@ -125,7 +125,7 @@ struct TeamPageView: View {
                                 MainButtonStyle2(Title: "팀 전적", SubTitle: "note.text")
                                 
                             })
-                            NavigationLink(destination: EmptyView(), label: {
+                            NavigationLink(destination: TeamRankView(teamNAME: $teamNAME), label: {
                                 MainButtonStyle2(Title: "팀 랭킹", SubTitle: "crown.fill")
                                 
                             })
